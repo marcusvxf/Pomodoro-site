@@ -1,5 +1,5 @@
 .box{
-    padding: 50px;
+    padding: 20px;
     width: 600px;
     border: 2px solid #000000;
     height: 600px ;
@@ -12,8 +12,8 @@
     background-color:#BF1736;
 }
 .relogio{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border: 4px solid #0E2773;
     border-radius: 50%;
     align-items: center !important;
@@ -21,13 +21,13 @@
     display: flex;
     text-align: center;
     position: relative;
-    top: 5%;
+    top: 0%;
 }
 
 .relogio2{
     text-align: center;
     position: absolute;
-    top: 5%;
+    bottom: -9px;
     font-size: 100px;
 }
 .base{
@@ -35,7 +35,16 @@
     border: transparent;
 }
 .titulo{
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+    font-size: 40px;
+    font-family: 'Catamaran', sans-serif !important;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;    
+}
+.titulo:hover{
+    transform: translateY(-8px);
+
 }
 body{
     background-color: #0D1440;
@@ -50,7 +59,8 @@ body{
 .footer{
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 0px;
+
 }
 button{
     height: 40px;
@@ -58,6 +68,9 @@ button{
     border-radius: 10px;
     text-transform: uppercase;
     box-shadow: 0 5px #999;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button:hover{
@@ -66,4 +79,6 @@ button:hover{
 }
 button:active{
     transform: translateY(-8px);
+    box-shadow: 0 10px #999;
+
 }
