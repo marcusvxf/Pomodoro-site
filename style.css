@@ -1,7 +1,7 @@
 .box {
   padding: 20px;
   width: 600px;
-  border: 2px solid #000000;
+  border: 10px solid #000000;
   height: 600px;
   border-radius: 20%;
   position: relative;
@@ -9,13 +9,12 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: #BF1736;
-}
+  background-color: #347FED; }
 
 .relogio {
   width: 350px;
   height: 350px;
-  border: 4px solid #0E2773;
+  border: 10px solid black;
   border-radius: 50%;
   align-items: center !important;
   flex-direction: column;
@@ -23,68 +22,69 @@
   text-align: center;
   position: relative;
   top: 0%;
-}
+  background-color: white; }
 
 .relogio2 {
   text-align: center;
   position: absolute;
   bottom: -9px;
   font-size: 100px;
-}
+  display: flex;
+  align-items: center; }
 
 .base {
   padding-top: 60px;
-  border: transparent;
-}
+  border: transparent; }
 
 .titulo {
   padding-bottom: 0px;
   font-size: 40px;
-  font-family: "Catamaran", sans-serif !important;
+  font-family: 'Catamaran', sans-serif !important;
   font-style: italic;
   font-weight: 900;
   text-transform: uppercase;
-}
-
-.titulo:hover {
-  transform: translateY(-8px);
-}
+  transition-duration: 200ms;
+  color: #34ED92; }
+  .titulo:hover {
+    transform: translateY(-8px);
+    transform: rotate(15deg);
+    color: white; }
 
 body {
-  background-color: #0D1440;
-  align-items: center;
+  background-color: #36F7CF;
   display: flex;
   flex-direction: column;
-}
+  justify-content: center;
+  align-items: center; }
 
 .logo {
   width: 45px;
-  height: 45px;
-}
+  height: 45px; }
 
 .footer {
   display: flex;
   flex-direction: row;
-  margin-top: 0px;
-}
+  margin-top: 20px; }
 
 button {
   height: 40px;
   width: 100px;
   border-radius: 10px;
   text-transform: uppercase;
-  box-shadow: 0 5px #999;
   font-size: 15px;
   font-weight: 900;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  transition-duration: 200ms; }
+  button:hover {
+    border: transparent;
+    transform: translateY(-8px); }
+  button:active {
+    transform: translateY(8px); }
 
-button:hover {
-  background-image: linear-gradient(to left, #D31FEB, white, #3C6ADE);
-  border: transparent;
-}
+@media (min-width: 320px) {
+  body {
+    padding-top: 0em; } }
 
-button:active {
-  transform: translateY(-8px);
-  box-shadow: 0 10px #999;
-}
+@media (min-width: 1025px) {
+  body {
+    padding-top: 0; } }

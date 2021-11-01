@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <link rel="stylesheet" href='style.scss'>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href='style.css'>
         <title>Pomodoro Time</title>
-        <script src="https://kit.fontawesome.com/yourcode.js"></script>
+        <script src="/Pomodoro-site/script.js" charset="UTF-8" defer ></script>
+        <link rel="icon" href="/Pomodoro-site/gitlogo.png">
     </head>
     <body >
         <div class="box">
             <p class="titulo">Pomodoro time</p>
             <div class="relogio"> 
-                <div class="relogio2"><h5>25:00</h5></div>
+                <div class="relogio2"><h5 id="minutos" >25</h5><h5>:</h5><h5 id="segundos">00</h5></div>
             </div>
             <div class="base">
-                <button type="button" class="big-button"> Iniciar </button>
-                <button type="button" class="big-button"> Parar </button>
+                <button type="button" onclick="comecar()" class="big-button"> Iniciar </button>
+                <button type="button" onclick="parar()" class="big-button"> Parar </button>
                 <!-- <button type="button" /> -->
             </div>                      
         </div>
