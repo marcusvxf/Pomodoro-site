@@ -1,8 +1,12 @@
-const minutos = document.getElementById("minutos")
-const segundos = document.getElementById("segundos")
+const minutos = document.getElementById("minutos");
+const segundos = document.getElementById("segundos");
+const box = document.getElementById("box");
+
+
 let acabar = true;
 let pressionado = false;
 let momento = 1;
+var notes = [];
 
 
 const comecar = ()=>{
@@ -54,4 +58,19 @@ const parar = ()=> {
 const song = () =>{
     var audio = new Audio('https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3');
     audio.play();
+}
+
+const adicionar = () =>{
+    let content =  document.getElementById("text");
+    notes.push(content.value);
+    createNote(content.value);    
+    content.value = "";
+}
+
+const createNote = (content)=>{
+    const note = document.createElement('div');
+    note.classList.add("note");
+    note.innerHTML=content;
+    box.appendChild(note);
+
 }

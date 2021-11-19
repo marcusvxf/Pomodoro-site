@@ -5,19 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href='style.css'>
-        <title>Pomodoro Time</title>
-        <script src="/Pomodoro-site/script.js" charset="UTF-8" defer ></script>
+        <title>Pomodoro Timer</title>
+        <script src="script.js" charset="UTF-8" defer ></script>
         <link rel="icon" href="/Pomodoro-site/gitlogo.png">
     </head>
     <body >
         <div class="box">
-            <p class="titulo">Pomodoro time</p>
+            <p class="titulo">Pomodoro timer</p>
             <div class="relogio"> 
                 <div class="relogio2"><h5 id="minutos" >25</h5><h5>:</h5><h5 id="segundos">00</h5></div>
             </div>
             <div class="base">
                 <button type="button" onclick="comecar()" class="big-button"> Iniciar </button>
                 <button type="button" onclick="parar()" class="big-button"> Parar </button>
+                <button class="big-button" onclick="window.location.href='/pages/notas.html'" >Notas</button>
                 <!-- <button type="button" /> -->
             </div>                      
         </div>
